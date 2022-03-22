@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 
+
 const Home: NextPage = () => {
     return (
         <div className="home">
@@ -13,7 +14,6 @@ const Home: NextPage = () => {
                 />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-
             <main className="main">
                 <h1>Here will be your page</h1>
             </main>
@@ -33,7 +33,7 @@ const Home: NextPage = () => {
                             height={30}
                         />
                     </span>{" "}
-                All rights reserved © 2021
+                    All rights reserved © 2021
                 </a>
             </footer>
         </div>
