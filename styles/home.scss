@@ -1,40 +1,11 @@
 .home {
-    min-height: 100vh;
-    padding: 4rem 0;
+    width: 100%;
+    width: 100%;
+    height: calc(100vh - 100px);
     /* Background */
-
-    position: absolute;
-    width: 100%;
-    height: auto;
     left: 0px;
-    top: 96px;
+    top: 100px;
     background: url("../public/background.svg");
-}
-
-.main {
-    width: 100%;
-    height: 75vh;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer {
-    display: flex;
-    flex: 1;
-    padding: 2rem 0;
-    border-top: 1px solid #eaeaea;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
 }
 
 @media (max-width: 600px) {
