@@ -1,17 +1,42 @@
-import React from 'react'
+import React from "react";
+import Link from "next/link";
+import Image from "next/image";
 
 const Navbar = () => {
-  return (
-    <div className='navbar'>
-        <ul>
-            <li>Home</li>
-            <li>Biography</li>
-            <li>Repertoire</li>
-            <li>Media</li>
-            <li>Resources</li>
-        </ul>
-    </div>
-  )
-}
+    return (
+        <div className="navbar">
+            <div className="float-left">
+                <Link href="/" passHref>
+                    Home
+                </Link>
+                <Link href="/biography" passHref>
+                    Biography
+                </Link>
+                <Link href="/repertoire" passHref>
+                    Repertoire
+                </Link>
+                <Link href="/media" passHref>
+                    Media
+                </Link>
+                <Link href="/resources" passHref>
+                    Resources
+                </Link>
+            </div>
+            <div className="float-right">
+                <Link href="/lessons" passHref>
+                    <div className="wrap">Book a Lesson</div>
+                </Link>
+                <div className="img-wrap">
+                    <Image
+                        src="/esp.svg"
+                        alt="esp-logo"
+                        width={50}
+                        height={30}
+                    />
+                </div>
+            </div>
+        </div>
+    );
+};
 
-export default Navbar
+export default Navbar;

@@ -8,4 +8,34 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    .float-left {
+        flex: 0.6;
+        font-weight: 400;
+        font-size: 30px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .float-right {
+        flex: 0.4;
+        font-weight: 400;
+        font-size: 30px;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+
+        .wrap {
+            display: flex;
+            border: solid 1px white;
+            border-radius: 12px;
+            padding: 0px 15px 4px 15px;
+            cursor: pointer;
+        }
+
+        .img-wrap {
+            display: flex;
+            margin: 0 20px;
+        }
+    }
 }

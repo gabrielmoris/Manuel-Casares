@@ -1,11 +1,17 @@
 .home {
     width: 100%;
-    width: 100%;
     height: calc(100vh - 130px);
+    // position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     /* Background */
     left: 0px;
     top: 100px;
     background: url("../public/background.svg");
+
+    // .main {
+    // }
 }
 
 @media (max-width: 600px) {
