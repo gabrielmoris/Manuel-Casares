@@ -1,11 +1,14 @@
 .footer {
     display: flex;
+    position: absolute;
     padding: 2rem 0;
     justify-content: center;
     align-items: center;
-    background: #6a6a6a;
-    height: 130px;
+    // background: rgb(128, 128, 128);
+    height: 120px;
+    width: 100%;
     flex-direction: column;
+    top:calc(100vh - 120px);
 
     // a {
     //     display: flex;

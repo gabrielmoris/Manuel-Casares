@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import Image from "next/image";
 
 
 
@@ -15,7 +16,21 @@ const Home: NextPage = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main className="main">
-                <h1>Here will be your page</h1>
+                <div className="img-float-left">
+                    <Image
+                        src="/manuel.svg"
+                        alt="youtube-logo"
+                        width={300}
+                        height={300}
+                    />
+                </div>
+                <div className="text-float-right">
+                    <h1>Manuel Casares Gestal</h1>
+                    <h3>
+                        Concert Pianist & Teacher <br/>Master - Academy of Music<br/>
+                        “Krzysztof Penderecki” in Krakow, Poland
+                    </h3>
+                </div>
             </main>
         </div>
     );
