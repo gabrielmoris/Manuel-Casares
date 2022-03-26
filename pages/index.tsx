@@ -20,8 +20,8 @@ const Home: NextPage = () => {
                     <Image
                         src="/manuel.svg"
                         alt="youtube-logo"
-                        width={300}
-                        height={300}
+                        width={350}
+                        height={350}
                     />
                 </div>
                 <div className="text-float-right">

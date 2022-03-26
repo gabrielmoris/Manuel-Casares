@@ -1,0 +1,46 @@
+.repertoire {
+    width: 100%;
+    height: calc(100vh);
+    // position:relative;
+    display: flex;
+    // justify-content: center;
+    // align-items: center;
+    flex-direction: column;
+
+
+    .title-repertoire {
+        text-align: center;
+        padding-top: 100px;
+        h1 {
+            font-family: "Aref Ruqaa", serif;
+            font-size: 40px;
+            padding-bottom: 10px;
+        }
+        h2 {
+            font-family: "Aref Ruqaa", serif;
+            font-size: 30px;
+            font-weight: 300;
+        }
+    }
+    .body-repertoire {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        .left-repertoire {
+            h2 {
+                font-family: "Aref Ruqaa", serif;
+            }
+            h3 {
+                font-family: "Aref Ruqaa", serif;
+            }
+            ul {
+                li {
+                    font-family: "Aref Ruqaa", serif;
+                }
+            }
+        }
+        .right-repertoire {
+        }
+    }
+}

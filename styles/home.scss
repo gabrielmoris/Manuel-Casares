@@ -1,14 +1,10 @@
 .home {
     width: 100%;
-    height: calc(100vh);
+    height: calc(100vh - 120px);
     // position:relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* Background */
-    background: linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)),url("../public/background.svg");
-    background-size: cover;
-    background-blend-mode: luminosity;
 
     .main {
         display: flex;
@@ -35,6 +31,7 @@
         }
     }
 }
+
 
 @media (max-width: 600px) {
     .grid {

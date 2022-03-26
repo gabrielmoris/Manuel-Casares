@@ -1,0 +1,16 @@
+.biography {
+    width: 100%;
+    height: calc(100vh);
+    // position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Background */
+    background: linear-gradient(
+            rgba(255, 255, 255, 0.01),
+            rgba(255, 255, 255, 0.01)
+        ),
+        url("../public/background.svg");
+    background-size: cover;
+    background-blend-mode: luminosity;
+}

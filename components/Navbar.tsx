@@ -7,19 +7,29 @@ const Navbar = () => {
         <div className="navbar">
             <div className="float-left">
                 <Link href="/" passHref>
-                    Home
+                    <div className="navlink">
+                        <h3>Home</h3>
+                    </div>
                 </Link>
                 <Link href="/biography" passHref>
-                    Biography
+                    <div className="navlink">
+                        <h3>Biography</h3>
+                    </div>
                 </Link>
                 <Link href="/repertoire" passHref>
-                    Repertoire
+                    <div className="navlink">
+                        <h3>Repertoire</h3>
+                    </div>
                 </Link>
                 <Link href="/media" passHref>
-                    Media
+                    <div className="navlink">
+                        <h3>Media</h3>
+                    </div>
                 </Link>
                 <Link href="/resources" passHref>
-                    Resources
+                    <div className="navlink">
+                        <h3>Resources</h3>
+                    </div>
                 </Link>
             </div>
             <div className="float-right">
