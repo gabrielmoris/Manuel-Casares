@@ -151,7 +151,27 @@ const Repertoire: NextPage = () => {
                     </ul>
                     <h3>Mozart</h3>
                     <ul>
-                        <li>Mozart</li>
+                        <li>Piano Trio in Bb Major, KV 502</li>
+                    </ul>
+                    <h3>Beethoven</h3>
+                    <ul>
+                        <li>Piano Trio in C minor, Op. 1 no. 3</li>
+                    </ul>
+                    <h3>Mendelssohn</h3>
+                    <ul>
+                        <li>Piano Trio in D minor No. 1</li>
+                    </ul>
+                    <h3>Arensky</h3>
+                    <ul>
+                        <li>Piano Trio in D minor No. 1</li>
+                    </ul>
+                    <h3>Rachmaninov</h3>
+                    <ul>
+                        <li>Piano Trio in G minor No. 1</li>
+                    </ul>
+                    <h3>Tchaikovsky</h3>
+                    <ul>
+                        <li>Piano Trio in A minor</li>
                     </ul>
                 </div>
             </div>

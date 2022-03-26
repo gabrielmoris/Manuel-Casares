@@ -5,30 +5,32 @@
     align-items: center;
     flex-direction: column;
 
-
     .title-repertoire {
         text-align: center;
         padding-top: 100px;
         h1 {
             font-family: "Aref Ruqaa", serif;
             font-size: 40px;
-            padding-bottom: 10px;
         }
         h2 {
             font-family: "Aref Ruqaa", serif;
             font-size: 30px;
             font-weight: 300;
         }
+        padding-bottom: 60px;
     }
 
     .body-repertoire {
         display: flex;
         justify-content: center;
-        align-items: center;
+        // align-items: center;
         flex-direction: row;
+        padding-bottom: 30px;
         .left-repertoire {
+            flex: 0.5;
             h2 {
                 font-family: "Aref Ruqaa", serif;
+                padding-bottom: 20px;
             }
             h3 {
                 font-family: "Aref Ruqaa", serif;
@@ -36,11 +38,35 @@
             ul {
                 li {
                     font-family: "Aref Ruqaa", serif;
+                    margin-left: 30px;
                 }
+                padding-bottom: 20px;
             }
         }
         .right-repertoire {
-            
+            flex: 0.5;
+            h2 {
+                font-family: "Aref Ruqaa", serif;
+                padding-bottom: 20px;
+            }
+            h3 {
+                font-family: "Aref Ruqaa", serif;
+            }
+            h4 {
+                font-family: "Aref Ruqaa", serif;
+                padding-bottom: 20px;
+            }
+            ul {
+                li {
+                    font-family: "Aref Ruqaa", serif;
+                    margin-left: 30px;
+                }
+                padding-bottom: 20px;
+            }
+            .underlined {
+                text-decoration: underline;
+                padding-bottom: 20px;
+            }
         }
     }
 }

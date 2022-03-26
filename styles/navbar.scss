@@ -55,10 +55,12 @@
                 color:black;
                 background-color: white;
             }
+            margin: 0 20px;
         }
 
         .img-wrap {
-            display: flex;
+            display: none;
+            // display: flex;
             margin: 0 20px;
         }
     }
