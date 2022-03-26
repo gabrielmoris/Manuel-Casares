@@ -72,7 +72,7 @@ const Repertoire: NextPage = () => {
                     <ul>
                         <li>Gaspard de la Nuit</li>
                     </ul>
-                    <h3>Albeniz</h3>
+                    <h3>Albéniz</h3>
                     <ul>
                         <li>Iberia, notebooks 1 & 4</li>
                         <li>Spanish Suite</li>
@@ -88,7 +88,72 @@ const Repertoire: NextPage = () => {
                         <li>Sonata No. 2</li>
                     </ul>
                 </div>
-                <div className="right-repertoire"></div>
+                <div className="right-repertoire">
+                    <h2>Chamber Music</h2>
+                    <h3 className="underlined">Violin & Piano</h3>
+                    <h3>Beethoven</h3>
+                    <ul>
+                        <li>Sonata No. 4 in A minor</li>
+                        <li>Sonata No. 10 in G Major</li>
+                    </ul>
+                    <h3>Brahms</h3>
+                    <ul>
+                        <li>Sonata No. 1 in G Major</li>
+                        <li>Sonata No. 3 in D minor</li>
+                        <li>Scherzo FAE</li>
+                    </ul>
+                    <h3>Tchaikovsky</h3>
+                    <ul>
+                        <li>Souvenir d’un Lieu Cher, op. 42</li>
+                        <li>Valse Scherzo, op. 34</li>
+                    </ul>
+                    <h3>Ravel</h3>
+                    <ul>
+                        <li>Sonata No. 2 in G Major</li>
+                    </ul>
+                    <h3>Enescu</h3>
+                    <ul>
+                        <li>Impressions d’enfance, op. 23</li>
+                    </ul>
+                    <h4>
+                        Numerous violin concertos and other short virtuosic
+                        works (Wieniawski, Sarasate, Paganini)
+                    </h4>
+                    <h3 className="underlined">Violin & Piano</h3>
+                    <h3>Beethoven</h3>
+                    <ul>
+                        <li>Sonata No. 1 in F Major</li>
+                        <li>Sonata No. 3 in A Major</li>
+                    </ul>
+                    <h3>Brahms</h3>
+                    <ul>
+                        <li>Sonata No. 1 in E minor</li>
+                        <li>Sonata No. 3 in F Major</li>
+                    </ul>
+                    <h3>Grieg (complete work)</h3>
+                    <ul>
+                        <li>Sonata in A minor op. 36</li>
+                        <li>Allegretto (from Violin Sonata No. 3)</li>
+                        <li>Intermezzo, EG 115</li>
+                    </ul>
+                    <h3>Fauré</h3>
+                    <ul>
+                        <li>Elegie, op. 24</li>
+                    </ul>
+                    <h3>Hindemith</h3>
+                    <ul>
+                        <li>Fantasiestücke, op. 8</li>
+                    </ul>
+                    <h3 className="underlined">Violin, Cello & Piano</h3>
+                    <h3>Haydn</h3>
+                    <ul>
+                        <li>Piano Trio in G Major, Hob. XV:25 (“Gypsy”)</li>
+                    </ul>
+                    <h3>Mozart</h3>
+                    <ul>
+                        <li>Mozart</li>
+                    </ul>
+                </div>
             </div>
         </div>
     );

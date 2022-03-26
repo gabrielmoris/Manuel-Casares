@@ -1,10 +1,8 @@
 .repertoire {
     width: 100%;
-    height: calc(100vh);
-    // position:relative;
     display: flex;
-    // justify-content: center;
-    // align-items: center;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
 
 
@@ -22,6 +20,7 @@
             font-weight: 300;
         }
     }
+
     .body-repertoire {
         display: flex;
         justify-content: center;
@@ -41,6 +40,7 @@
             }
         }
         .right-repertoire {
+            
         }
     }
 }
