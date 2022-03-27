@@ -1,0 +1,44 @@
+.menu {
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s ease;
+
+    .close-hamburger {
+        height: 18%;
+        width: 100%;
+        justify-self: flex-start;
+        position: absolute;
+        top: 0;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10%;
+        padding: 0;
+        list-style: none;
+        font-size: 27px;
+        font-weight: 400;
+        width: 60%;
+        color: #ffffff;
+        transition: all 1s ease;
+
+        li {
+            margin-bottom: 25px;
+        }
+    }
+
+    &.active {
+        right: 0;
+        background-color: #000000e3;
+    }
+}
