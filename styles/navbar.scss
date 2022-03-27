@@ -5,10 +5,15 @@
     height: 100px;
     left: 0px;
     top: 0px;
+    z-index: 20;
     display: flex;
     align-items: center;
     justify-content: space-around;
     background-color: rgba(0, 0, 0, 0.822);
+
+     @media (max-width: 600px) {
+            height: 60px;
+        }
 
     .float-left {
         flex: 0.6;

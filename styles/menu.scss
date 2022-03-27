@@ -1,24 +1,25 @@
 .menu {
     width: 100%;
     height: 100vh;
-    background-color: #ffffff;
+    background-color: #ffffff00;
+    backdrop-filter: blur(10px);
     position: fixed;
     top: 0;
     right: -100%;
-    z-index: 999;
+    z-index: 10;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     transition: all 1s ease;
 
-    .close-hamburger {
-        height: 18%;
-        width: 100%;
-        justify-self: flex-start;
-        position: absolute;
-        top: 0;
-    }
+    // .close-hamburger {
+    //     height: 18%;
+    //     width: 100%;
+    //     justify-self: flex-start;
+    //     position: absolute;
+    //     top: 0;
+    // }
 
     ul {
         display: flex;
@@ -29,7 +30,6 @@
         font-size: 27px;
         font-weight: 400;
         width: 60%;
-        color: #ffffff;
         transition: all 1s ease;
 
         li {
@@ -39,6 +39,6 @@
 
     &.active {
         right: 0;
-        background-color: #000000e3;
+        background-color: #00000049;
     }
 }

@@ -9,10 +9,10 @@ interface Props {
 const Menu = ({ hamburger, setHamburger }: Props) => {
     return (
         <div className={"menu " + (hamburger && "active")}>
-            <div
+            {/* <div
                 className="close-hamburger"
                 onClick={() => setHamburger(false)}
-            ></div>
+            ></div> */}
             <ul>
                 <li onClick={() => setHamburger(false)}>
                     <Link href="/" passHref>
