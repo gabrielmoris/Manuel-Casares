@@ -1,10 +1,17 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+interface Props {
+    hamburger: boolean;
+    setHamburger: (value: boolean) => void;
+}
 
-const Navbar = () => {
+const Navbar = ({ hamburger, setHamburger }: Props) => {
     return (
         <div className="navbar">
+            <div className="title-phone">
+                <h3>Manuel Casares Gestal</h3>
+            </div>
             <div className="float-left">
                 <Link href="/" passHref>
                     <div className="navlink">
@@ -44,6 +51,14 @@ const Navbar = () => {
                         height={30}
                     />
                 </div>
+            </div>
+            <div
+                className={"hamburger " + (hamburger && "active")}
+                onClick={() => setHamburger(!hamburger)}
+            >
+                <span className="line1"></span>
+                <span className="line2"></span>
+                <span className="line3"></span>
             </div>
         </div>
     );
