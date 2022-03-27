@@ -18,6 +18,15 @@
             font-weight: 300;
         }
         padding-bottom: 60px;
+        @media (max-width: 600px) {
+            padding-top: 50px;
+            h1 {
+                font-size: 20px;
+            }
+            h2 {
+                font-size: 15px;
+            }
+        }
     }
 
     .body-repertoire {
@@ -26,6 +35,11 @@
         // align-items: center;
         flex-direction: row;
         padding-bottom: 30px;
+
+        @media (max-width: 600px) {
+            padding-bottom: 15px;
+        }
+
         .left-repertoire {
             flex: 0.5;
             h2 {
@@ -41,6 +55,25 @@
                     margin-left: 30px;
                 }
                 padding-bottom: 20px;
+            }
+
+            @media (max-width: 600px) {
+                h2 {
+                    font-size: 20px;
+                    text-align: center;
+                    font-weight: 700;
+                }
+                h3 {
+                    font-size: 20px;
+                    text-align: center;
+                    font-weight: 100;
+                }
+                ul {
+                    padding-bottom: 15px;
+                    li {
+                        font-size: 15px;
+                    }
+                }
             }
         }
         .right-repertoire {
@@ -66,6 +99,31 @@
             .underlined {
                 text-decoration: underline;
                 padding-bottom: 20px;
+            }
+
+            @media (max-width: 600px) {
+                h2 {
+                    font-size: 20px;
+                    text-align: center;
+                    font-weight: 700;
+                }
+                h3 {
+                    font-size: 20px;
+                    text-align: center;
+                    font-weight: 100;
+                }
+                h4 {
+                    font-size: 12px;
+                    padding-bottom: 10px;
+                    padding-left: 20px;
+                    text-align: justify;
+                }
+                ul {
+                    padding-bottom: 15px;
+                    li {
+                        font-size: 15px;
+                    }
+                }
             }
         }
     }
