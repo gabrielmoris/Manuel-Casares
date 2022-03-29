@@ -41,7 +41,7 @@ const Navbar = ({ hamburger, setHamburger }: Props) => {
             </div>
             <div className="float-right">
                 <Link href="/lessons" passHref>
-                    <div className="wrap">Book a Lesson</div>
+                    <div className="wrap">Contact</div>
                 </Link>
                 <div className="img-wrap">
                     <Image
