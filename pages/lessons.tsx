@@ -1,18 +1,17 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import type { NextPage } from "next";
 import { useForm } from "react-hook-form";
 
 const Lessons: NextPage = () => {
- const [success, setSuccess]=useState(false)
+    const [success, setSuccess] = useState(false);
 
     const {
         register,
         handleSubmit,
-        // watch,
         formState: { errors },
     } = useForm();
 
-    const onSubmit = (data: any) => {
+    const onSubmit = (data: any,e:any) => {
         fetch("https://formsubmit.co/ajax/manuel_981@hotmail.com", {
             method: "POST",
             headers: {
@@ -28,8 +27,9 @@ const Lessons: NextPage = () => {
         })
             .then((response) => response.json())
             .then((data) => {
-                if(data.success){
-                    setSuccess(true)
+                if (data.success) {
+                    setSuccess(true);
+                    e.target.reset();
                 }
             })
             .catch((error) => console.log(error));
@@ -84,11 +84,15 @@ const Lessons: NextPage = () => {
                     {...register("message", { required: true })}
                 />
                 {/* <input type="date" name="date" id="date"/> */}
-                {errors.message && (<span>A message required.</span>)}
-                {errors.firstname && (<span>Name is required.</span>)}
-                {errors.lastname && (<span>Last name is required.</span>)}
-                {errors.email && (<span>Email is required.</span>)}
-                {success && (<span className="success">Thank you. I will contact you ASAP.</span>)}
+                {errors.message && <span>A message required.</span>}
+                {errors.firstname && <span>Name is required.</span>}
+                {errors.lastname && <span>Last name is required.</span>}
+                {errors.email && <span>Email is required.</span>}
+                {success && (
+                    <span className="success">
+                        Thank you. I will contact you ASAP.
+                    </span>
+                )}
                 <button>Submit</button>
             </form>
         </div>
