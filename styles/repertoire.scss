@@ -38,21 +38,28 @@
 
         @media (max-width: 600px) {
             padding-bottom: 15px;
+            flex-direction: column;
+            align-items: center;
         }
 
         .left-repertoire {
-            flex: 0.5;
+            flex: 0.7;
+            max-width: 50%;
+            margin: 0 20px;
             h2 {
                 font-family: "Aref Ruqaa", serif;
                 padding-bottom: 20px;
+                font-size: 30px;
             }
             h3 {
                 font-family: "Aref Ruqaa", serif;
+                font-size: 20px;
             }
             ul {
                 li {
                     font-family: "Aref Ruqaa", serif;
                     margin-left: 30px;
+                    font-size: 20px;
                 }
                 padding-bottom: 20px;
             }
@@ -77,9 +84,12 @@
             }
         }
         .right-repertoire {
-            flex: 0.5;
+            flex: 0.3;
+            max-width: 50%;
+            margin: 0 20px;
             h2 {
                 font-family: "Aref Ruqaa", serif;
+                font-size: 30px;
                 padding-bottom: 20px;
             }
             h3 {

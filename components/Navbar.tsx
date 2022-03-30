@@ -33,11 +33,11 @@ const Navbar = ({ hamburger, setHamburger }: Props) => {
                         <h3>Media</h3>
                     </div>
                 </Link>
-                <Link href="/resources" passHref>
+                {/* <Link href="/resources" passHref>
                     <div className="navlink">
                         <h3>Resources</h3>
                     </div>
-                </Link>
+                </Link> */}
             </div>
             <div className="float-right">
                 <Link href="/lessons" passHref>

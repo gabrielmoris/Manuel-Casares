@@ -16,8 +16,8 @@ const Repertoire: NextPage = () => {
                         <li>Wide selection of sonatas and fugues</li>
                         <li>Italian Concerto, BWV 971</li>
                         <li>
-                            Chaconne, from the Violin Suite No. 2 in D minor
-                            (arr. Busoni)
+                            Chaconne, from the Violin Suite No. 2 <br /> in D
+                            minor (arr. Busoni)
                         </li>
                     </ul>
                     <h3>Haydn</h3>
@@ -116,8 +116,8 @@ const Repertoire: NextPage = () => {
                         <li>Impressions d’enfance, op. 23</li>
                     </ul>
                     <h4>
-                        Numerous violin concertos and other short virtuosic
-                        works (Wieniawski, Sarasate, Paganini)
+                        Numerous violin concertos and other short <br />{" "}
+                        virtuosic works (Wieniawski, Sarasate, Paganini)
                     </h4>
                     <h3 className="underlined">Violin & Piano</h3>
                     <h3>Beethoven</h3>

@@ -1,8 +1,10 @@
-import React from "react";
+import React, {useState} from "react";
 import type { NextPage } from "next";
 import { useForm } from "react-hook-form";
 
 const Lessons: NextPage = () => {
+ const [success, setSuccess]=useState(false)
+
     const {
         register,
         handleSubmit,
@@ -11,7 +13,26 @@ const Lessons: NextPage = () => {
     } = useForm();
 
     const onSubmit = (data: any) => {
-        console.log(data);
+        fetch("https://formsubmit.co/ajax/gabrieltrompeta@gmail.com", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json",
+            },
+            body: JSON.stringify({
+                name: data.firstname,
+                surname: data.lastname,
+                email: data.email,
+                message: data.message,
+            }),
+        })
+            .then((response) => response.json())
+            .then((data) => {
+                if(data.success){
+                    setSuccess(true)
+                }
+            })
+            .catch((error) => console.log(error));
     };
 
     return (
@@ -19,7 +40,7 @@ const Lessons: NextPage = () => {
             <form onSubmit={handleSubmit(onSubmit)}>
                 <h1>Contact</h1>
                 <p>
-                    * for information about lessons, concerts and other business
+                    For information about lessons, concerts and other business
                     inquiries.
                 </p>
                 {/* <div className="checkboxes-div">
@@ -67,6 +88,8 @@ const Lessons: NextPage = () => {
                 {errors.firstname && (<span>Name is required.</span>)}
                 {errors.lastname && (<span>Last name is required.</span>)}
                 {errors.email && (<span>Email is required.</span>)}
+                {errors.email && (<span>Email is required.</span>)}
+                {success && (<span className="success">Thank you. I will contact you ASAP.</span>)}
                 <button>Submit</button>
             </form>
         </div>
