@@ -1,0 +1,82 @@
+.media {
+    width: 100%;
+    min-height: calc(100vh - 120px);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    h1 {
+        font-family: "Aref Ruqaa", serif;
+    }
+    .concert-list {
+        padding: 10% 5% 0 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .video-card {
+            margin: 50px 0;
+            padding: 0 0 10px 0;
+            border-radius: 12px;
+            box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+                0 0 0 2px rgba(255, 255, 255, 0.356),
+                0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(20px);
+            height: 300px;
+            a {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                img {
+                    width: 400px;
+                    height: auto;
+                    border-top-left-radius: 12px;
+                    border-top-right-radius: 12px;
+                }
+
+                h3 {
+                    font-family: "Aref Ruqaa", serif;
+                    width: 300px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .classes-list {
+        padding: 10% 5% 0 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .video-card {
+            margin: 50px 0;
+            padding: 0 0 10px 0;
+            border-radius: 12px;
+            box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+                0 0 0 2px rgba(255, 255, 255, 0.356),
+                0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(20px);
+            height: 300px;
+            a {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 400px;
+                    height: auto;
+                    border-top-left-radius: 12px;
+                    border-top-right-radius: 12px;
+                }
+
+                h3 {
+                    font-family: "Aref Ruqaa", serif;
+                    width: 300px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
