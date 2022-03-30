@@ -51,16 +51,7 @@ const Footer = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    Powered by{" "}
-                    <span className="logo">
-                        <Image
-                            src="/bust.svg"
-                            alt="GabrielCMoris-logo"
-                            width={25}
-                            height={30}
-                        />
-                    </span>{" "}
-                    All rights reserved © 2022
+                    Powered by Gabrielcmoris. All rights reserved © 2022
                 </a>
             </div>
         </div>

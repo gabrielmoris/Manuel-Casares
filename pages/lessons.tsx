@@ -13,7 +13,7 @@ const Lessons: NextPage = () => {
     } = useForm();
 
     const onSubmit = (data: any) => {
-        fetch("https://formsubmit.co/ajax/gabrieltrompeta@gmail.com", {
+        fetch("https://formsubmit.co/ajax/manuel_981@hotmail.com", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -87,7 +87,6 @@ const Lessons: NextPage = () => {
                 {errors.message && (<span>A message required.</span>)}
                 {errors.firstname && (<span>Name is required.</span>)}
                 {errors.lastname && (<span>Last name is required.</span>)}
-                {errors.email && (<span>Email is required.</span>)}
                 {errors.email && (<span>Email is required.</span>)}
                 {success && (<span className="success">Thank you. I will contact you ASAP.</span>)}
                 <button>Submit</button>
