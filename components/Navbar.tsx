@@ -10,7 +10,11 @@ const Navbar = ({ hamburger, setHamburger }: Props) => {
     return (
         <div className="navbar">
             <div className="title-phone">
-                <h3>Manuel Casares Gestal</h3>
+                <Link href="/" passHref>
+                    <div className="wrap">
+                        <h3>Manuel Casares Gestal</h3>
+                    </div>
+                </Link>
             </div>
             <div className="float-left">
                 <Link href="/" passHref>
