@@ -8,7 +8,7 @@ const YOUTUBE_PLAYLIST_ITEMS_API =
 const Media = () => {
     const key = secrets.YOUTUBE_API_KEY;
     const [youtubeListConcert, setYoutubeListConcert] = useState([]);
-    const [youtubeListClasses, setYoutubeListClasses] = useState([]);
+    const [youtubeListLatestVideos, setYoutubeListLatestVideos] = useState([]);
 
     useEffect(() => {
         fetch(
@@ -22,12 +22,12 @@ const Media = () => {
                 console.log("Error in youtube API", e);
             });
         fetch(
-            `${YOUTUBE_PLAYLIST_ITEMS_API}?part=snippet&playlistId=PL_1PtPZ6qufy-Uiv5yeTnEKxCMAdDKQxs&maxResults=4&key=${key}`
+            `${YOUTUBE_PLAYLIST_ITEMS_API}?part=snippet&playlistId=PL_1PtPZ6qufySoZIHCMxMDQDZ68ZAVvTU&maxResults=4&key=${key}`
         )
             .then((res) => {
                 return res.json();
             })
-            .then((data) => setYoutubeListClasses(data.items))
+            .then((data) => setYoutubeListLatestVideos(data.items))
             .catch((e) => {
                 console.log("Error in youtube API", e);
             });
@@ -36,7 +36,7 @@ const Media = () => {
     return (
         <div className="media">
             <div className="concert-list">
-                <h1>Concerts:</h1>
+                <h1>Recordings</h1>
                 {youtubeListConcert.map((video) => {
                     const { id, snippet = {} }: any = video;
                     const { title, thumbnails = {}, resourceId }: any = snippet;
@@ -57,8 +57,8 @@ const Media = () => {
                 })}
             </div>
             <div className="classes-list">
-                <h1>Classes:</h1>
-                {youtubeListClasses.map((video) => {
+                <h1>Latest Videos</h1>
+                {youtubeListLatestVideos.map((video) => {
                     const { id, snippet = {} }: any = video;
                     const { title, thumbnails = {}, resourceId }: any = snippet;
                     const { medium = {} }: any = thumbnails;

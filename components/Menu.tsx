@@ -42,17 +42,17 @@ const Menu = ({ hamburger, setHamburger }: Props) => {
                         </div>
                     </Link>
                 </li>
-                <li onClick={() => setHamburger(false)}>
+                {/* <li onClick={() => setHamburger(false)}>
                     <Link href="/resources" passHref>
                         <div className="navlink">
                             <h3>Resources</h3>
                         </div>
                     </Link>
-                </li>
+                </li> */}
                 <li onClick={() => setHamburger(false)}>
                     <Link href="/lessons" passHref>
                         <div className="navlink">
-                            <h3>Book a Lesson</h3>
+                            <h3>Contact</h3>
                         </div>
                     </Link>
                 </li>

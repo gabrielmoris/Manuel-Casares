@@ -18,10 +18,11 @@
             font-weight: 300;
         }
         padding-bottom: 60px;
+
         @media (max-width: 600px) {
             padding-top: 50px;
             h1 {
-                font-size: 20px;
+                font-size: 30px;
             }
             h2 {
                 font-size: 15px;
@@ -46,6 +47,8 @@
             flex: 0.7;
             max-width: 50%;
             margin: 0 20px;
+
+
             h2 {
                 font-family: "Aref Ruqaa", serif;
                 padding-bottom: 20px;
@@ -65,20 +68,21 @@
             }
 
             @media (max-width: 600px) {
+                max-width: 90%;
                 h2 {
-                    font-size: 20px;
+                    font-size: 25px;
                     text-align: center;
                     font-weight: 700;
                 }
                 h3 {
-                    font-size: 20px;
+                    font-size: 25px;
                     text-align: center;
                     font-weight: 100;
                 }
                 ul {
                     padding-bottom: 15px;
                     li {
-                        font-size: 15px;
+                        font-size: 17px;
                     }
                 }
             }
@@ -114,18 +118,19 @@
             }
 
             @media (max-width: 600px) {
+                max-width: 90%;
                 h2 {
-                    font-size: 20px;
+                    font-size: 25px;
                     text-align: center;
                     font-weight: 700;
                 }
                 h3 {
-                    font-size: 20px;
+                    font-size: 25px;
                     text-align: center;
                     font-weight: 100;
                 }
                 h4 {
-                    font-size: 12px;
+                    font-size: 15px;
                     padding-bottom: 10px;
                     padding-left: 20px;
                     text-align: justify;
@@ -133,7 +138,7 @@
                 ul {
                     padding-bottom: 15px;
                     li {
-                        font-size: 15px;
+                        font-size: 17px;
                     }
                 }
             }
