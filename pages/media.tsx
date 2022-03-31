@@ -6,7 +6,7 @@ const YOUTUBE_PLAYLIST_ITEMS_API =
     "https://www.googleapis.com/youtube/v3/playlistItems";
 
 const Media = () => {
-    const key = secrets.YOUTUBE_API_KEY;
+    const key = process.env.YOUTUBE_API_KEY || secrets.YOUTUBE_API_KEY;
     const [youtubeListConcert, setYoutubeListConcert] = useState([]);
     const [youtubeListLatestVideos, setYoutubeListLatestVideos] = useState([]);
 
@@ -56,6 +56,7 @@ const Media = () => {
                     );
                 })}
             </div>
+
             <div className="classes-list">
                 <h1>Latest Videos</h1>
                 {youtubeListLatestVideos.map((video) => {

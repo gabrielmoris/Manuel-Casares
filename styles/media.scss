@@ -5,6 +5,7 @@
     justify-content: center;
     align-items: flex-start;
     flex-direction: row;
+
     @media (max-width: 600px) {
         flex-direction: column;
     }
@@ -25,11 +26,16 @@
             margin: 50px 0;
             padding: 0 0 10px 0;
             border-radius: 12px;
-            box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
-                0 0 0 2px rgba(255, 255, 255, 0.356),
-                0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+            border: solid 2px rgba(255, 255, 255, 0.356);
             backdrop-filter: blur(20px);
             height: 300px;
+            transition: all 1s ease;
+
+            &:hover {
+                transform: translateY(-3px);
+                box-shadow: 5px 5px 15px -5px rgba(255, 255, 255, 0.5);
+            }
+
             a {
                 display: flex;
                 flex-direction: column;
@@ -38,8 +44,8 @@
                 img {
                     width: 400px;
                     height: auto;
-                    border-top-left-radius: 12px;
-                    border-top-right-radius: 12px;
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
                 }
 
                 h3 {
@@ -60,11 +66,16 @@
             margin: 50px 0;
             padding: 0 0 10px 0;
             border-radius: 12px;
-            box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
-                0 0 0 2px rgba(255, 255, 255, 0.356),
-                0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+            border: solid 2px rgba(255, 255, 255, 0.356);
             backdrop-filter: blur(20px);
             height: 300px;
+            transition: all 1s ease;
+
+           &:hover {
+                transform: translateY(-3px);
+                box-shadow: 5px 5px 15px -5px rgba(255, 255, 255, 0.5);
+            }
+
             a {
                 display: flex;
                 flex-direction: column;
@@ -74,8 +85,8 @@
                 img {
                     width: 400px;
                     height: auto;
-                    border-top-left-radius: 12px;
-                    border-top-right-radius: 12px;
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
                 }
 
                 h3 {
