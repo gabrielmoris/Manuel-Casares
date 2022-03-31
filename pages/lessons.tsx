@@ -90,7 +90,7 @@ const Lessons: NextPage = () => {
                 {errors.email && <span>Email is required.</span>}
                 {success && (
                     <span className="success">
-                        Thank you. I will contact you ASAP.
+                        Thank you. I will contact you soon.
                     </span>
                 )}
                 <button>Submit</button>

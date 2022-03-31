@@ -31,7 +31,7 @@ const Media = () => {
             .catch((e) => {
                 console.log("Error in youtube API", e);
             });
-    }, []);
+    }, [key]);
 
     return (
         <div className="media">
@@ -58,7 +58,7 @@ const Media = () => {
             </div>
 
             <div className="classes-list">
-                <h1>Latest Videos</h1>
+                <h1>Live Lessons</h1>
                 {youtubeListLatestVideos.map((video) => {
                     const { id, snippet = {} }: any = video;
                     const { title, thumbnails = {}, resourceId }: any = snippet;
