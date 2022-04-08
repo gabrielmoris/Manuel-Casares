@@ -6,7 +6,6 @@ import { useForm } from "react-hook-form";
 const Lessons: NextPage = () => {
     const [success, setSuccess] = useState(false);
     // const urlMailToFetch = process.env.URL_FETCH_MAIL || secrets.URL_FETCH_MAIL;
-    const urlMailToFetch = process.env.URL_FETCH_MAIL;
     const {
         register,
         handleSubmit,
@@ -14,7 +13,7 @@ const Lessons: NextPage = () => {
     } = useForm();
 
     const onSubmit = (data: any, e: any) => {
-        fetch(urlMailToFetch, {
+        fetch("https://formsubmit.co/ajax/manuel_981@hotmail.com", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
