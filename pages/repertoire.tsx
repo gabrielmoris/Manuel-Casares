@@ -13,10 +13,10 @@ const Repertoire: NextPage = () => {
                     <h2>Piano Solo</h2>
                     <h3>Bach</h3>
                     <ul>
-                        <li>Wide selection of sonatas and fugues</li>
+                        <li>Wide selection of Preludes and Fugues</li>
                         <li>Italian Concerto, BWV 971</li>
                         <li>
-                            Chaconne, from the Violin Suite No. 2 <br /> in D
+                            Chaconne, from the Violin Partita No. 2 <br /> in D
                             minor (arr. Busoni)
                         </li>
                     </ul>
@@ -34,31 +34,31 @@ const Repertoire: NextPage = () => {
                     </ul>
                     <h3>Chopin</h3>
                     <ul>
-                        <li>Sonata No. 2 in Bb minor</li>
-                        <li>Sonata No. 3 in B minor</li>
-                        <li>Selection of Studies op. 10</li>
-                        <li>Selection of Studies op. 25</li>
+                        <li>Sonata No. 2 in Bb minor op. 35</li>
+                        <li>Sonata No. 3 in B minor op. 58</li>
+                        <li>Selection of Études op. 10</li>
+                        <li>Selection of Études op. 25</li>
                         <li>Waltzes Op. 18, 34, 64, post.</li>
-                        <li>Ballad No. 1 in G minor</li>
+                        <li>Ballade No. 1 in G minor</li>
                         <li>Mazurkas (Selection)</li>
                         <li>Nocturnes (Selection)</li>
                         <li>Polonaises (Selection)</li>
                         <li>Preludes (Selection)</li>
                         <li>
-                            Andante Spianato & Grande Polonaise Brilliant, Op.
-                            23
+                            Andante Spianato & Grande Polonaise <br />{" "}
+                            Brillante, Op. 23
                         </li>
                     </ul>
                     <h3>Schubert</h3>
                     <ul>
                         <li>Four Impromptus op. 90</li>
-                        <li>Wanderer fantasy</li>
+                        <li>Wanderer-Fantasie</li>
                     </ul>
                     <h3>Schumann</h3>
                     <ul>
-                        <li>Kreisleriana, Opus 16</li>
-                        <li>Arabesque, op. 18</li>
-                        <li>Children&#39;s Scenes</li>
+                        <li>Kinderszenen op. 15</li>
+                        <li>Kreisleriana op. 16</li>
+                        <li>Arabesque op. 18</li>
                     </ul>
                     <h3>Debussy</h3>
                     <ul>
@@ -74,18 +74,20 @@ const Repertoire: NextPage = () => {
                     </ul>
                     <h3>Albéniz</h3>
                     <ul>
-                        <li>Iberia, notebooks 1 & 4</li>
+                        <li>Iberia, books 1 & 4</li>
                         <li>Spanish Suite</li>
                     </ul>
                     <h3>Prokofiev</h3>
                     <ul>
-                        <li>Sonatas 2, 5, 7</li>
+                        <li>Sonata 2 op. 14</li>
+                        <li>Sonata 5 op. 38</li>
+                        <li>Sonata 7 op. 83</li>
                         <li>Suggestion diabolique, op. 4</li>
                         <li>Pieces op. 12 (Selection)</li>
                     </ul>
-                    <h3>Shostakóvich</h3>
+                    <h3>Shostakovich</h3>
                     <ul>
-                        <li>Sonata No. 2</li>
+                        <li>Sonata No. 2 op. 61</li>
                     </ul>
                 </div>
                 <div className="right-repertoire">

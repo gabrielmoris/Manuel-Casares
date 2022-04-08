@@ -16,6 +16,7 @@ const Home: NextPage = () => {
                     name="description"
                     content="Manuel Casares is a young concert pianist and international piano teacher. He was born in A Coruña and lived in Kraków ( poland ) and Málaga."
                 />
+                <meta name="robots" content="index, archive"/>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main className="main">
