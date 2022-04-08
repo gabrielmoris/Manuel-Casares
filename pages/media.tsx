@@ -1,12 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useEffect, useState } from "react";
-import secrets from "../secrets.json";
+// import secrets from "../secrets.json";
 
 const YOUTUBE_PLAYLIST_ITEMS_API =
     "https://www.googleapis.com/youtube/v3/playlistItems";
 
 const Media = () => {
-    const key = process.env.YOUTUBE_API_KEY || secrets.YOUTUBE_API_KEY;
+    // const key = process.env.YOUTUBE_API_KEY || secrets.YOUTUBE_API_KEY;
+    const key = process.env.YOUTUBE_API_KEY;
     const [youtubeListConcert, setYoutubeListConcert] = useState([]);
     const [youtubeListLatestVideos, setYoutubeListLatestVideos] = useState([]);
 
