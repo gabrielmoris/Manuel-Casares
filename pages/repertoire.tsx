@@ -121,7 +121,7 @@ const Repertoire: NextPage = () => {
                         Numerous violin concertos and other short <br />{" "}
                         virtuosic works (Wieniawski, Sarasate, Paganini)
                     </h4>
-                    <h3 className="underlined">Violin & Piano</h3>
+                    <h3 className="underlined">Cello & piano</h3>
                     <h3>Beethoven</h3>
                     <ul>
                         <li>Sonata No. 1 in F Major</li>
@@ -132,7 +132,7 @@ const Repertoire: NextPage = () => {
                         <li>Sonata No. 1 in E minor</li>
                         <li>Sonata No. 3 in F Major</li>
                     </ul>
-                    <h3>Grieg (complete work)</h3>
+                    <h3>Grieg (complete works)</h3>
                     <ul>
                         <li>Sonata in A minor op. 36</li>
                         <li>Allegretto (from Violin Sonata No. 3)</li>
