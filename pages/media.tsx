@@ -6,6 +6,7 @@ if (process.env.NODE_ENV == "production") {
     secrets = process.env;
 }
 
+
 const YOUTUBE_PLAYLIST_ITEMS_API =
     "https://www.googleapis.com/youtube/v3/playlistItems";
 
@@ -16,6 +17,7 @@ const Media = () => {
     const [youtubeListLatestVideos, setYoutubeListLatestVideos] = useState([]);
 
     useEffect(() => {
+        console.log(secrets);
         fetch(
             `${YOUTUBE_PLAYLIST_ITEMS_API}?part=snippet&playlistId=PL_1PtPZ6qufyEK5c682JAbk8VAe8Cyz2P&maxResults=4&key=${key}`
         )
