@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import type { NextPage } from "next";
 import { useForm } from "react-hook-form";
+import secrets from "../secrets.json";
 
 const Lessons: NextPage = () => {
     const [success, setSuccess] = useState(false);
+    const urlMailToFetch = process.env.URL_FETCH_MAIL || secrets.URL_FETCH_MAIL;
 
     const {
         register,
@@ -11,8 +13,8 @@ const Lessons: NextPage = () => {
         formState: { errors },
     } = useForm();
 
-    const onSubmit = (data: any,e:any) => {
-        fetch("https://formsubmit.co/ajax/manuel_981@hotmail.com", {
+    const onSubmit = (data: any, e: any) => {
+        fetch(urlMailToFetch, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
