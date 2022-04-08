@@ -4,4 +4,49 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    padding-top: 100px;
+
+    .tittle {
+        h1 {
+            font-family: "Aref Ruqaa", serif;
+        }
+        h2 {
+            font-family: "Aref Ruqaa", serif;
+        }
+
+        @media (max-width: 600px) {
+            margin-bottom: 30px;
+        }
+    }
+
+    .bio-body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        max-width: 85%;
+
+        @media (max-width: 600px) {
+            flex-direction: column;
+            max-width: 98%;
+        }
+
+        p {
+            font-family: "Aref Ruqaa", serif;
+            max-width: 500px;
+            text-align: justify;
+            margin: 0 50px;
+
+            @media (max-width: 600px) {
+                margin-bottom: 30px;
+            }
+        }
+
+        .img-hidden-phone {
+            @media (max-width: 600px) {
+                display: none;
+            }
+        }
+    }
 }
