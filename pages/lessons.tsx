@@ -1,11 +1,9 @@
 import React, { useState } from "react";
 import type { NextPage } from "next";
 import { useForm } from "react-hook-form";
-// import secrets from "../secrets.json";
 
 const Lessons: NextPage = () => {
     const [success, setSuccess] = useState(false);
-    // const urlMailToFetch = process.env.URL_FETCH_MAIL || secrets.URL_FETCH_MAIL;
     const {
         register,
         handleSubmit,

@@ -1,23 +1,17 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useEffect, useState } from "react";
-// import secrets from "../secrets.json";
-let secrets: NodeJS.ProcessEnv;
-if (process.env.NODE_ENV == "production") {
-    secrets = process.env;
-}
-
 
 const YOUTUBE_PLAYLIST_ITEMS_API =
     "https://www.googleapis.com/youtube/v3/playlistItems";
 
+const key = process.env.YOUTUBE_KEY;
+
 const Media = () => {
-    // const key = process.env.YOUTUBE_API_KEY || secrets.YOUTUBE_API_KEY;
-    const key = secrets.YOUTUBE_API_KEY;
     const [youtubeListConcert, setYoutubeListConcert] = useState([]);
     const [youtubeListLatestVideos, setYoutubeListLatestVideos] = useState([]);
 
     useEffect(() => {
-        console.log(secrets);
+
         fetch(
             `${YOUTUBE_PLAYLIST_ITEMS_API}?part=snippet&playlistId=PL_1PtPZ6qufyEK5c682JAbk8VAe8Cyz2P&maxResults=4&key=${key}`
         )

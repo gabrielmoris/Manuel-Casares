@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-}
-
+    reactStrictMode: true,
+    env: {
+        YOUTUBE_KEY: process.env.YOUTUBE_KEY,
+    },
+};
 module.exports = nextConfig
