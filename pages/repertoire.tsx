@@ -16,8 +16,8 @@ const Repertoire: NextPage = () => {
                         <li>Wide selection of Preludes and Fugues</li>
                         <li>Italian Concerto, BWV 971</li>
                         <li>
-                            Chaconne, from the Violin Partita No. 2 <br /> in D
-                            minor (arr. Busoni)
+                            Chaconne, from the Violin Partita No. 2 in D minor
+                            (arr. Busoni)
                         </li>
                     </ul>
                     <h3>Haydn</h3>
@@ -45,8 +45,8 @@ const Repertoire: NextPage = () => {
                         <li>Polonaises (Selection)</li>
                         <li>Preludes (Selection)</li>
                         <li>
-                            Andante Spianato & Grande Polonaise <br />{" "}
-                            Brillante, Op. 23
+                            Andante Spianato & Grande Polonaise Brillante, Op.
+                            23
                         </li>
                     </ul>
                     <h3>Schubert</h3>
@@ -121,7 +121,9 @@ const Repertoire: NextPage = () => {
                         Numerous violin concertos and other short <br />{" "}
                         virtuosic works (Wieniawski, Sarasate, Paganini)
                     </h4>
-                    <h3 className="underlined">Cello & piano</h3>
+                    <h3 className="underlined afterunderlined">
+                        Cello & piano
+                    </h3>
                     <h3>Beethoven</h3>
                     <ul>
                         <li>Sonata No. 1 in F Major</li>
@@ -146,7 +148,9 @@ const Repertoire: NextPage = () => {
                     <ul>
                         <li>Fantasiestücke, op. 8</li>
                     </ul>
-                    <h3 className="underlined">Violin, Cello & Piano</h3>
+                    <h3 className="underlined afterunderlined">
+                        Violin, Cello & Piano
+                    </h3>
                     <h3>Haydn</h3>
                     <ul>
                         <li>Piano Trio in G Major, Hob. XV:25 (“Gypsy”)</li>

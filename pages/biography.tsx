@@ -14,7 +14,7 @@ const Biography: NextPage = () => {
                     Recent winner of the Special Chopin Prize at the “Turniej
                     Pianistów w Antoninie” Competition in Poland, among others,
                     Manuel Casares is a versatile musician with a prolific
-                    international career and a vast antivirus repertoire as a
+                    international career and a vast repertoire as a
                     soloist and a chamber musician. He has performed in some of
                     the most prestigious venues in Spain, Poland, Romania and
                     the Czech Republic, and has won a number of distinctions and

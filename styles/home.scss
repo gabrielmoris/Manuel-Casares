@@ -27,7 +27,8 @@
             text-align: center;
 
             h1 {
-                font-family: "Aref Ruqaa", serif;
+                // font-family: 'Aref Ruqaa', serif;
+                font-family: 'Roboto Slab', serif;
                 font-size: 56px;
                 padding-bottom: 10px;
                 @media (max-width: 600px) {
@@ -35,7 +36,7 @@
                 }
             }
             h3 {
-                font-family: "Aref Ruqaa", serif;
+                font-family: 'Roboto Slab', serif;
                 font-size: 25px;
                 font-weight: 400;
                 @media (max-width: 600px) {
