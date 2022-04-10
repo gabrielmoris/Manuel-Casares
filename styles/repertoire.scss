@@ -53,20 +53,24 @@
                 font-family: "Roboto Slab", serif;
                 padding-bottom: 20px;
                 font-size: 30px;
+                font-weight: 700;
             }
             h3 {
                 font-family: "Roboto Slab", serif;
-                font-size: 20px;
+                font-size: 30px;
+                font-weight: 100;
             }
             ul {
                 li {
                     font-family: "Roboto Slab", serif;
                     margin-left: 30px;
                     font-size: 20px;
-
                 }
                 .listen {
                     cursor: pointer;
+
+                    line-height: 1.6;
+
                 }
                 padding-bottom: 20px;
             }
@@ -78,12 +82,10 @@
                 h2 {
                     font-size: 25px;
                     text-align: center;
-                    font-weight: 700;
                 }
                 h3 {
                     font-size: 25px;
                     text-align: center;
-                    font-weight: 100;
                 }
                 ul {
                     padding-bottom: 15px;
@@ -97,14 +99,17 @@
             max-width: 50%;
             min-width: 30%;
             margin: 0 15%;
+
             h2 {
                 font-family: "Roboto Slab", serif;
                 font-size: 30px;
                 padding-bottom: 20px;
+                font-weight: 700;
             }
             h3 {
                 font-family: "Roboto Slab", serif;
-                font-size: 20px;
+                font-size: 30px;
+                font-weight: 100;
             }
             h4 {
                 font-family: "Roboto Slab", serif;
@@ -115,6 +120,7 @@
                     font-family: "Roboto Slab", serif;
                     margin-left: 30px;
                     font-size: 20px;
+                    line-height: 1.6;
                 }
                 .listen {
                     cursor: pointer;
@@ -127,21 +133,20 @@
             }
 
             .afterunderlined {
-                padding-top: 80px;
+                padding-top: 50px;
             }
 
             @media (max-width: 600px) {
                 max-width: 90%;
                 margin: 0 20px;
+                padding-top: 60px;
                 h2 {
                     font-size: 25px;
                     text-align: center;
-                    font-weight: 700;
                 }
                 h3 {
                     font-size: 25px;
                     text-align: center;
-                    font-weight: 100;
                 }
                 h4 {
                     font-size: 15px;

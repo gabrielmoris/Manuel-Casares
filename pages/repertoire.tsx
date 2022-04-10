@@ -233,8 +233,8 @@ const Repertoire: NextPage = () => {
                         <li>Impressions d’enfance, op. 23</li>
                     </ul>
                     <h4>
-                        Numerous violin concertos and other short <br />{" "}
-                        virtuosic works (Wieniawski, Sarasate, Paganini)
+                        Numerous violin concertos and other short virtuosic
+                        works (Wieniawski, Sarasate, Paganini, etc.)
                     </h4>
                     <h3 className="underlined afterunderlined">
                         Cello & piano
@@ -247,7 +247,7 @@ const Repertoire: NextPage = () => {
                     <h3>Brahms</h3>
                     <ul>
                         <li>Sonata No. 1 in E minor</li>
-                        <li>Sonata No. 3 in F Major</li>
+                        <li>Sonata No. 2 in F Major</li>
                     </ul>
                     <h3>Grieg (complete works)</h3>
                     <ul>
