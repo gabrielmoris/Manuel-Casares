@@ -4,13 +4,23 @@ import Image from "next/image";
 
 const Repertoire: NextPage = () => {
     const [audio, setAudio]: any = useState(null);
+    const [toggler, setToggler] = useState(false);
 
     const play = (music: string | undefined) => {
         setAudio(music);
     };
 
+    const closeAudio = ()=>{
+         if (toggler) {
+             setAudio(null);
+             setToggler(!toggler);
+         } else {
+             setToggler(!toggler);
+         }
+    }
+
     return (
-        <div className="repertoire">
+        <div className="repertoire" onClick={closeAudio}>
             <div className="title-repertoire">
                 <h1>Manuel Casares Gestal</h1>
                 <h2>Repertoire</h2>
