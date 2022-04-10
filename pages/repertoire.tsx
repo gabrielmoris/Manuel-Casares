@@ -1,12 +1,35 @@
-import React, { useEffect } from "react";
+import React, { useState } from "react";
 import type { NextPage } from "next";
 
 const Repertoire: NextPage = () => {
+    const [audioPlay, setAudioPlay] = useState(true);
+    const [audio, setAudio]: any = useState(null);
+
+    const play = (music: any) => {
+        if (audioPlay) {
+            setAudio(new Audio(music));
+            audio?.pause();
+            audio?.currentTime = 0;
+            setAudioPlay(false);
+            console.log("pause", audio);
+        } else {
+            audio?.play();
+            setAudioPlay(true);
+            console.log("play", audio);
+        }
+    };
+
     return (
         <div className="repertoire">
             <div className="title-repertoire">
                 <h1>Manuel Casares Gestal</h1>
-                <h2>Repertoire</h2>
+                <h2
+                    onClick={() => {
+                        play("Audios/AlbenizIberia.mp3");
+                    }}
+                >
+                    Repertoire
+                </h2>
             </div>
             <div className="body-repertoire">
                 <div className="left-repertoire">
@@ -14,7 +37,9 @@ const Repertoire: NextPage = () => {
                     <h3>Bach</h3>
                     <ul>
                         <li>Wide selection of Preludes and Fugues</li>
-                        <li>Italian Concerto, BWV 971</li>
+                        <li onClick={() => play("Audios/Bach-italiano.mp3")}>
+                            Italian Concerto, BWV 971
+                        </li>
                         <li>
                             Chaconne, from the Violin Partita No. 2 in D minor
                             (arr. Busoni)
