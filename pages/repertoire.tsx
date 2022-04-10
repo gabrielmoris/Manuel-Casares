@@ -132,7 +132,7 @@ const Repertoire: NextPage = () => {
                     <h3>Brahms</h3>
                     <ul>
                         <li>Sonata No. 1 in E minor</li>
-                        <li>Sonata No. 3 in F Major</li>
+                        <li>Sonata No. 2 in F Major</li>
                     </ul>
                     <h3>Grieg (complete works)</h3>
                     <ul>
