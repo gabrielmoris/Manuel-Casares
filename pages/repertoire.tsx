@@ -13,6 +13,7 @@ const Repertoire: NextPage = () => {
             setAudioPlay(false);
             console.log("pause", audio);
         } else {
+            audio?.pause();
             audio?.play();
             setAudioPlay(true);
             console.log("play", audio);
