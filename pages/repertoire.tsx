@@ -204,6 +204,52 @@ const Repertoire: NextPage = () => {
                     <ul>
                         <li>Sonata No. 2 op. 61</li>
                     </ul>
+                    <h2 className="afterunderlined">Concerts</h2>
+                    <h3>Haydn</h3>
+                    <ul>
+                        <li>Concerto in D Major, Hob. XVIII:11</li>
+                    </ul>
+                    <h3>Mozart</h3>
+                    <ul>
+                        <li>Concertos 14, 20, 21, 26, 27</li>
+                    </ul>
+                    <h3>Beethoven</h3>
+                    <ul>
+                        <li>Concerto no. 2 in b-flat major op. 19</li>
+                        <li
+                            className="listen"
+                            onClick={() =>
+                                play("Audios/CONCERTOBeethoven5.mp3")
+                            }
+                        >
+                            Concerto no. 5 in e-flat major op. 73 Emperor{" "}
+                            <Image
+                                src="/listen.svg"
+                                alt="listen-icon"
+                                width={25}
+                                height={25}
+                                priority
+                            />
+                        </li>
+                    </ul>
+                    <h3>Tchaikovsky</h3>
+                    <ul>
+                        <li
+                            className="listen"
+                            onClick={() =>
+                                play("Audios/CONCERTOTchaikovsky.mp3")
+                            }
+                        >
+                            Concerto no. 1 in b-flat minor op. 23{" "}
+                            <Image
+                                src="/listen.svg"
+                                alt="listen-icon"
+                                width={25}
+                                height={25}
+                                priority
+                            />
+                        </li>
+                    </ul>
                 </div>
                 <div className="right-repertoire">
                     <h2>Chamber Music</h2>
