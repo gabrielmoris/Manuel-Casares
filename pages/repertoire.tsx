@@ -3,13 +3,11 @@ import type { NextPage } from "next";
 import Image from "next/image";
 
 const Repertoire: NextPage = () => {
-    const [audio, setAudio]:any= useState(null);
+    const [audio, setAudio]: any = useState(null);
 
     const play = (music: string | undefined) => {
-            setAudio(music);
+        setAudio(music);
     };
-
-
 
     return (
         <div className="repertoire">

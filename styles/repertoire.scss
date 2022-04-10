@@ -19,6 +19,21 @@
         }
         padding-bottom: 60px;
 
+        audio {
+            position: fixed;
+            top: 150px;
+            width: 250px;
+            height: 30px;
+            margin: 5% auto;
+            left: 0;
+            right: 0;
+            filter: opacity(30%);
+            @media (max-width: 600px) {
+                top:90%;
+                filter: opacity(90%);
+            }
+        }
+
         @media (max-width: 600px) {
             padding-top: 50px;
             h1 {
@@ -70,7 +85,6 @@
                     cursor: pointer;
 
                     line-height: 1.6;
-
                 }
                 padding-bottom: 20px;
             }
