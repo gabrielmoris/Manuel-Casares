@@ -7,13 +7,11 @@ const Repertoire: NextPage = () => {
 
     const play = (music: any) => {
         if (audioPlay) {
-            setAudio(new Audio(music));
             audio?.pause();
-            audio?.currentTime = 0;
+            setAudio(new Audio(music));
             setAudioPlay(false);
             console.log("pause", audio);
         } else {
-            audio?.pause();
             audio?.play();
             setAudioPlay(true);
             console.log("play", audio);
