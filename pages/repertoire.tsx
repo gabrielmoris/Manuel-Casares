@@ -1,29 +1,30 @@
-import React, { useState } from "react";
+import React, { useMemo, useState, useEffect } from "react";
 import type { NextPage } from "next";
 import Image from "next/image";
 
 const Repertoire: NextPage = () => {
-    const [audioPlay, setAudioPlay] = useState(true);
-    const [audio, setAudio]: any = useState(null);
+    const [audio, setAudio]:any= useState(null);
 
-    const play = (music: any) => {
-        if (audioPlay) {
-            audio?.pause();
-            setAudio(new Audio(music));
-            setAudioPlay(false);
-            console.log("pause", audio);
-        } else {
-            audio?.play();
-            setAudioPlay(true);
-            console.log("play", audio);
-        }
+    const play = (music: string | undefined) => {
+            setAudio(music);
     };
+
+
 
     return (
         <div className="repertoire">
             <div className="title-repertoire">
                 <h1>Manuel Casares Gestal</h1>
                 <h2>Repertoire</h2>
+                {audio && (
+                    <audio
+                        id="audio"
+                        autoPlay
+                        loop
+                        controls
+                        src={audio}
+                    ></audio>
+                )}
             </div>
             <div className="body-repertoire">
                 <div className="left-repertoire">
