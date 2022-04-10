@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import type { NextPage } from "next";
+import Image from "next/image";
 
 const Repertoire: NextPage = () => {
     const [audioPlay, setAudioPlay] = useState(true);
@@ -22,13 +23,7 @@ const Repertoire: NextPage = () => {
         <div className="repertoire">
             <div className="title-repertoire">
                 <h1>Manuel Casares Gestal</h1>
-                <h2
-                    onClick={() => {
-                        play("Audios/AlbenizIberia.mp3");
-                    }}
-                >
-                    Repertoire
-                </h2>
+                <h2>Repertoire</h2>
             </div>
             <div className="body-repertoire">
                 <div className="left-repertoire">
@@ -36,8 +31,18 @@ const Repertoire: NextPage = () => {
                     <h3>Bach</h3>
                     <ul>
                         <li>Wide selection of Preludes and Fugues</li>
-                        <li onClick={() => play("Audios/Bach-italiano.mp3")}>
-                            Italian Concerto, BWV 971
+                        <li
+                            className="listen"
+                            onClick={() => play("Audios/Bach-italiano.mp3")}
+                        >
+                            Italian Concerto, BWV 971{" "}
+                            <Image
+                                src="/listen.svg"
+                                alt="listen-icon"
+                                width={25}
+                                height={25}
+                                priority
+                            />
                         </li>
                         <li>
                             Chaconne, from the Violin Partita No. 2 in D minor
@@ -58,19 +63,91 @@ const Repertoire: NextPage = () => {
                     </ul>
                     <h3>Chopin</h3>
                     <ul>
-                        <li>Sonata No. 2 in Bb minor op. 35</li>
+                        <li
+                            className="listen"
+                            onClick={() => play("Audios/ChopinSonata2.mp3")}
+                        >
+                            Sonata No. 2 in Bb minor op. 35{" "}
+                            <Image
+                                src="/listen.svg"
+                                alt="listen-icon"
+                                width={25}
+                                height={25}
+                                priority
+                            />
+                        </li>
                         <li>Sonata No. 3 in B minor op. 58</li>
-                        <li>Selection of Études op. 10</li>
-                        <li>Selection of Études op. 25</li>
-                        <li>Waltzes Op. 18, 34, 64, post.</li>
-                        <li>Ballade No. 1 in G minor</li>
+                        <li
+                            className="listen"
+                            onClick={() => play("Audios/Chopin-et-op10.mp3")}
+                        >
+                            Selection of Études op. 10{" "}
+                            <Image
+                                src="/listen.svg"
+                                alt="listen-icon"
+                                width={25}
+                                height={25}
+                                priority
+                            />
+                        </li>
+                        <li
+                            className="listen"
+                            onClick={() => play("Audios/Chopin-et-op25.mp3")}
+                        >
+                            Selection of Études op. 25{" "}
+                            <Image
+                                src="/listen.svg"
+                                alt="listen-icon"
+                                width={25}
+                                height={25}
+                                priority
+                            />
+                        </li>
+                        <li
+                            className="listen"
+                            onClick={() => play("Audios/ChopinWaltz.mp3")}
+                        >
+                            Waltzes Op. 18, 34, 64, post.{" "}
+                            <Image
+                                src="/listen.svg"
+                                alt="listen-icon"
+                                width={25}
+                                height={25}
+                                priority
+                            />
+                        </li>
+                        <li
+                            className="listen"
+                            onClick={() => play("Audios/ChopinBalladeGm.mp3")}
+                        >
+                            Ballade No. 1 in G minor{" "}
+                            <Image
+                                src="/listen.svg"
+                                alt="listen-icon"
+                                width={25}
+                                height={25}
+                                priority
+                            />
+                        </li>
                         <li>Mazurkas (Selection)</li>
                         <li>Nocturnes (Selection)</li>
                         <li>Polonaises (Selection)</li>
                         <li>Preludes (Selection)</li>
-                        <li>
+                        <li
+                            className="listen"
+                            onClick={() =>
+                                play("Audios/Chopin-PolonBrillante.mp3")
+                            }
+                        >
                             Andante Spianato & Grande Polonaise Brillante, Op.
-                            23
+                            23{" "}
+                            <Image
+                                src="/listen.svg"
+                                alt="listen-icon"
+                                width={25}
+                                height={25}
+                                priority
+                            />
                         </li>
                     </ul>
                     <h3>Schubert</h3>
@@ -98,7 +175,21 @@ const Repertoire: NextPage = () => {
                     </ul>
                     <h3>Albéniz</h3>
                     <ul>
-                        <li>Iberia, books 1 & 4</li>
+                        <li
+                            className="listen"
+                            onClick={() => {
+                                play("Audios/AlbenizIberia.mp3");
+                            }}
+                        >
+                            Iberia, books 1 & 4{" "}
+                            <Image
+                                src="/listen.svg"
+                                alt="listen-icon"
+                                width={25}
+                                height={25}
+                                priority
+                            />
+                        </li>
                         <li>Spanish Suite</li>
                     </ul>
                     <h3>Prokofiev</h3>
