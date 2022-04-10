@@ -55,7 +55,19 @@ const Repertoire: NextPage = () => {
                     </ul>
                     <h3>Mozart</h3>
                     <ul>
-                        <li>Selection of Sonatas for piano</li>
+                        <li
+                            className="listen"
+                            onClick={() => play("Audios/MozartSonata.mp3")}
+                        >
+                            Selection of Sonatas for piano{" "}
+                            <Image
+                                src="/listen.svg"
+                                alt="listen-icon"
+                                width={25}
+                                height={25}
+                                priority
+                            />
+                        </li>
                     </ul>
                     <h3>Beethoven</h3>
                     <ul>
@@ -158,7 +170,21 @@ const Repertoire: NextPage = () => {
                     <h3>Schumann</h3>
                     <ul>
                         <li>Kinderszenen op. 15</li>
-                        <li>Kreisleriana op. 16</li>
+                        <li
+                            className="listen"
+                            onClick={() =>
+                                play("Audios/SchumannKreisleriana.mp3")
+                            }
+                        >
+                            Kreisleriana op. 16{" "}
+                            <Image
+                                src="/listen.svg"
+                                alt="listen-icon"
+                                width={25}
+                                height={25}
+                                priority
+                            />
+                        </li>
                         <li>Arabesque op. 18</li>
                     </ul>
                     <h3>Debussy</h3>
@@ -194,7 +220,19 @@ const Repertoire: NextPage = () => {
                     </ul>
                     <h3>Prokofiev</h3>
                     <ul>
-                        <li>Sonata 2 op. 14</li>
+                        <li
+                            className="listen"
+                            onClick={() => play("Audios/ProkofievSonata2.mp3")}
+                        >
+                            Sonata 2 op. 14{" "}
+                            <Image
+                                src="/listen.svg"
+                                alt="listen-icon"
+                                width={25}
+                                height={25}
+                                priority
+                            />
+                        </li>
                         <li>Sonata 5 op. 38</li>
                         <li>Sonata 7 op. 83</li>
                         <li>Suggestion diabolique, op. 4</li>
@@ -250,6 +288,15 @@ const Repertoire: NextPage = () => {
                             />
                         </li>
                     </ul>
+                    <h3>Rachmaninov</h3>
+                    <ul>
+                        <li>Concerto no. 2 in c minor op. 18</li>
+                        <li>Concerto no. 3 in d minor op. 30</li>
+                    </ul>
+                    <h3>Ravel</h3>
+                    <ul>
+                        <li>Concerto in g major M. 83</li>
+                    </ul>
                 </div>
                 <div className="right-repertoire">
                     <h2>Chamber Music</h2>
@@ -262,7 +309,19 @@ const Repertoire: NextPage = () => {
                     <h3>Brahms</h3>
                     <ul>
                         <li>Sonata No. 1 in G Major</li>
-                        <li>Sonata No. 3 in D minor</li>
+                        <li
+                            className="listen"
+                            onClick={() => play("Audios/VIOLINBrahms3.mp3")}
+                        >
+                            Sonata No. 3 in D minor{" "}
+                            <Image
+                                src="/listen.svg"
+                                alt="listen-icon"
+                                width={25}
+                                height={25}
+                                priority
+                            />
+                        </li>
                         <li>Scherzo FAE</li>
                     </ul>
                     <h3>Tchaikovsky</h3>
@@ -272,7 +331,19 @@ const Repertoire: NextPage = () => {
                     </ul>
                     <h3>Ravel</h3>
                     <ul>
-                        <li>Sonata No. 2 in G Major</li>
+                        <li
+                            className="listen"
+                            onClick={() => play("Audios/VIOLINRavelSonata.mp3")}
+                        >
+                            Sonata No. 2 in G Major{" "}
+                            <Image
+                                src="/listen.svg"
+                                alt="listen-icon"
+                                width={25}
+                                height={25}
+                                priority
+                            />
+                        </li>
                     </ul>
                     <h3>Enescu</h3>
                     <ul>
