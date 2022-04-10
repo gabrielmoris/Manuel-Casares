@@ -9,10 +9,10 @@
 
     .tittle {
         h1 {
-            font-family: 'Roboto Slab', serif;
+            font-family: "Roboto Slab", serif;
         }
         h2 {
-            font-family: 'Roboto Slab', serif;
+            font-family: "Roboto Slab", serif;
         }
 
         @media (max-width: 600px) {
@@ -33,10 +33,15 @@
         }
 
         p {
-            font-family: 'Roboto Slab', serif;
+            font-family: "Roboto Slab", serif;
             max-width: 500px;
             text-align: justify;
+            line-height:1.6;
             margin: 0 50px;
+
+            i {
+                font-family: "Roboto Slab", serif;
+            }
 
             @media (max-width: 600px) {
                 margin-bottom: 30px;
