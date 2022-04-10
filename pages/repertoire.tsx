@@ -243,7 +243,7 @@ const Repertoire: NextPage = () => {
                     <ul>
                         <li>Sonata No. 2 op. 61</li>
                     </ul>
-                    <h2 className="afterunderlined">Concertos</h2>
+                    <h2 className="afterunderlined">Piano concertos</h2>
                     <h3>Haydn</h3>
                     <ul>
                         <li>Concerto in D Major, Hob. XVIII:11</li>
