@@ -119,7 +119,7 @@ const Repertoire: NextPage = () => {
                     </ul>
                     <h4>
                         Numerous violin concertos and other short <br />{" "}
-                        virtuosic works (Wieniawski, Sarasate, Paganini)
+                        virtuosic works (Wieniawski, Sarasate, Paganini, etc.)
                     </h4>
                     <h3 className="underlined afterunderlined">
                         Cello & piano
