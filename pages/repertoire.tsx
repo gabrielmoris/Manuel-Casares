@@ -252,14 +252,14 @@ const Repertoire: NextPage = () => {
                     </ul>
                     <h3>Beethoven</h3>
                     <ul>
-                        <li>Concerto no. 2 in b-flat major op. 19</li>
+                        <li>Concerto no. 2 in B-flat major op. 19</li>
                         <li
                             className="listen"
                             onClick={() =>
                                 play("Audios/CONCERTOBeethoven5.mp3")
                             }
                         >
-                            Concerto no. 5 in e-flat major op. 73 Emperor{" "}
+                            Concerto no. 5 in E-flat major op. 73 Emperor{" "}
                             <Image
                                 src="/listen.svg"
                                 alt="listen-icon"
@@ -277,7 +277,7 @@ const Repertoire: NextPage = () => {
                                 play("Audios/CONCERTOTchaikovsky.mp3")
                             }
                         >
-                            Concerto no. 1 in b-flat minor op. 23{" "}
+                            Concerto no. 1 in B-flat minor op. 23{" "}
                             <Image
                                 src="/listen.svg"
                                 alt="listen-icon"
@@ -289,12 +289,12 @@ const Repertoire: NextPage = () => {
                     </ul>
                     <h3>Rachmaninov</h3>
                     <ul>
-                        <li>Concerto no. 2 in c minor op. 18</li>
-                        <li>Concerto no. 3 in d minor op. 30</li>
+                        <li>Concerto no. 2 in C minor op. 18</li>
+                        <li>Concerto no. 3 in D minor op. 30</li>
                     </ul>
                     <h3>Ravel</h3>
                     <ul>
-                        <li>Concerto in g major M. 83</li>
+                        <li>Concerto in G major M. 83</li>
                     </ul>
                 </div>
                 <div className="right-repertoire">

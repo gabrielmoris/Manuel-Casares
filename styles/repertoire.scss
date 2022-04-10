@@ -29,7 +29,7 @@
             right: 0;
             filter: opacity(30%);
             @media (max-width: 600px) {
-                top:90%;
+                top: 90%;
                 filter: opacity(90%);
             }
         }
@@ -76,6 +76,8 @@
                 font-weight: 100;
             }
             ul {
+                padding-bottom: 20px;
+                line-height: 2;
                 li {
                     font-family: "Roboto Slab", serif;
                     margin-left: 30px;
@@ -83,10 +85,7 @@
                 }
                 .listen {
                     cursor: pointer;
-
-                    line-height: 1.6;
                 }
-                padding-bottom: 20px;
             }
             .afterunderlined {
                 padding-top: 50px;
@@ -137,7 +136,7 @@
                     font-family: "Roboto Slab", serif;
                     margin-left: 30px;
                     font-size: 20px;
-                    line-height: 1.6;
+                    line-height: 2;
                 }
                 .listen {
                     cursor: pointer;
