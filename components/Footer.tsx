@@ -15,6 +15,7 @@ const Footer = () => {
                         <Image
                             src="/instagram.svg"
                             alt="instagram-logo"
+                            className="instalogo"
                             width={30}
                             height={30}
                         />
