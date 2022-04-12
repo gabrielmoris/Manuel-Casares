@@ -8,6 +8,18 @@ const Footer = () => {
                 <h4>Follow Me</h4>
                 <div className="icons-followme">
                     <a
+                        href="https://www.instagram.com/manuelcasarespiano/"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <Image
+                            src="/instagram.svg"
+                            alt="instagram-logo"
+                            width={30}
+                            height={30}
+                        />
+                    </a>
+                    <a
                         href="https://www.youtube.com/channel/UCZBKPQ3iQUrwrxChV8AXFAg"
                         target="_blank"
                         rel="noreferrer"
@@ -32,8 +44,21 @@ const Footer = () => {
                         />
                     </a>
                     <a
+                        href="https://discord.gg/gU2dYPEY"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <Image
+                            src="/discord.svg"
+                            alt="tdiscord-logo"
+                            width={40}
+                            height={40}
+                        />
+                    </a>
+                    <a
                         href="https://www.reddit.com/user/bottom_of_the_key"
-                        target="_blank" rel="noreferrer"
+                        target="_blank"
+                        rel="noreferrer"
                     >
                         <Image
                             src="/reddit.svg"
