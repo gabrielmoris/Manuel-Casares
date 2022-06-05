@@ -10,7 +10,7 @@
         flex-direction: column;
     }
     h1 {
-        font-family: 'Roboto Slab', serif;
+        font-family: "Roboto Slab", serif;
     }
     .concert-list {
         padding: 10% 5% 0 5%;
@@ -30,6 +30,7 @@
             backdrop-filter: blur(20px);
             height: 300px;
             transition: all 1s ease;
+            overflow: hidden;
 
             &:hover {
                 transform: translateY(-3px);
@@ -49,7 +50,7 @@
                 }
 
                 h3 {
-                    font-family: 'Roboto Slab', serif;
+                    font-family: "Roboto Slab", serif;
                     width: 300px;
                     text-align: center;
                 }
@@ -70,8 +71,9 @@
             backdrop-filter: blur(20px);
             height: 300px;
             transition: all 1s ease;
+            overflow: hidden;
 
-           &:hover {
+            &:hover {
                 transform: translateY(-3px);
                 box-shadow: 5px 5px 15px -5px rgba(255, 255, 255, 0.5);
             }
@@ -90,7 +92,7 @@
                 }
 
                 h3 {
-                    font-family: 'Roboto Slab', serif;
+                    font-family: "Roboto Slab", serif;
                     width: 300px;
                     text-align: center;
                 }
