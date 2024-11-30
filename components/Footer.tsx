@@ -32,7 +32,7 @@ const Footer = () => {
                             height={50}
                         />
                     </a>
-                    <a
+                    {/* <a
                         href="https://www.twitch.tv/piano_subito"
                         target="_blank"
                         rel="noreferrer"
@@ -43,9 +43,9 @@ const Footer = () => {
                             width={50}
                             height={50}
                         />
-                    </a>
+                    </a> */}
                     <a
-                        href="https://discord.com/invite/BsUaVebuPT"
+                        href=" https://discord.gg/KEG9Wt6GwW"
                         target="_blank"
                         rel="noreferrer"
                     >
