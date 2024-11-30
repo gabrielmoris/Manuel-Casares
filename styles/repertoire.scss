@@ -1,182 +1,182 @@
 .repertoire {
-    width: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .title-repertoire {
+    text-align: center;
+    padding-top: 100px;
+    h1 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 40px;
+    }
+    h2 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 30px;
+      font-weight: 300;
+    }
+    padding-bottom: 60px;
+
+    audio {
+      position: fixed;
+      top: 150px;
+      width: 250px;
+      height: 30px;
+      margin: 5% auto;
+      left: 0;
+      right: 0;
+      filter: opacity(30%);
+      @media (max-width: 600px) {
+        top: 90%;
+        filter: opacity(90%);
+      }
+    }
+
+    @media (max-width: 600px) {
+      padding-top: 50px;
+      h1 {
+        font-size: 30px;
+      }
+      h2 {
+        font-size: 15px;
+      }
+    }
+  }
+
+  .body-repertoire {
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    // align-items: center;
+    flex-direction: row;
+    padding-bottom: 30px;
 
-    .title-repertoire {
-        text-align: center;
-        padding-top: 100px;
-        h1 {
-            font-family: "Roboto Slab", serif;
-            font-size: 40px;
+    @media (max-width: 600px) {
+      padding-bottom: 15px;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .left-repertoire {
+      max-width: 50%;
+      min-width: 35%;
+      margin: 0 15%;
+      padding-left: 5%;
+
+      h2 {
+        font-family: "Montserrat", sans-serif;
+        padding-bottom: 20px;
+        font-size: 30px;
+        font-weight: 700;
+      }
+      h3 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 30px;
+        font-weight: 100;
+      }
+      ul {
+        padding-bottom: 20px;
+        line-height: 2;
+        li {
+          font-family: "Montserrat", sans-serif;
+          margin-left: 30px;
+          font-size: 20px;
         }
+        .listen {
+          cursor: pointer;
+        }
+      }
+      .afterunderlined {
+        padding-top: 50px;
+      }
+
+      @media (max-width: 600px) {
+        max-width: 90%;
+        padding-left: 0;
+        margin: 0 20px;
         h2 {
-            font-family: "Roboto Slab", serif;
-            font-size: 30px;
-            font-weight: 300;
+          font-size: 25px;
+          text-align: center;
         }
-        padding-bottom: 60px;
-
-        audio {
-            position: fixed;
-            top: 150px;
-            width: 250px;
-            height: 30px;
-            margin: 5% auto;
-            left: 0;
-            right: 0;
-            filter: opacity(30%);
-            @media (max-width: 600px) {
-                top: 90%;
-                filter: opacity(90%);
-            }
+        h3 {
+          font-size: 25px;
+          text-align: center;
         }
-
-        @media (max-width: 600px) {
-            padding-top: 50px;
-            h1 {
-                font-size: 30px;
-            }
-            h2 {
-                font-size: 15px;
-            }
+        ul {
+          padding-bottom: 15px;
+          li {
+            font-size: 17px;
+          }
         }
+      }
     }
+    .right-repertoire {
+      max-width: 50%;
+      min-width: 30%;
+      margin: 0 15%;
 
-    .body-repertoire {
-        display: flex;
-        justify-content: center;
-        // align-items: center;
-        flex-direction: row;
-        padding-bottom: 30px;
-
-        @media (max-width: 600px) {
-            padding-bottom: 15px;
-            flex-direction: column;
-            align-items: center;
+      h2 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 30px;
+        padding-bottom: 20px;
+        font-weight: 700;
+      }
+      h3 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 30px;
+        font-weight: 100;
+      }
+      h4 {
+        font-family: "Montserrat", sans-serif;
+        padding-bottom: 22px;
+      }
+      ul {
+        li {
+          font-family: "Montserrat", sans-serif;
+          margin-left: 30px;
+          font-size: 20px;
+          line-height: 2;
         }
-
-        .left-repertoire {
-            max-width: 50%;
-            min-width: 35%;
-            margin: 0 15%;
-            padding-left: 5%;
-
-            h2 {
-                font-family: "Roboto Slab", serif;
-                padding-bottom: 20px;
-                font-size: 30px;
-                font-weight: 700;
-            }
-            h3 {
-                font-family: "Roboto Slab", serif;
-                font-size: 30px;
-                font-weight: 100;
-            }
-            ul {
-                padding-bottom: 20px;
-                line-height: 2;
-                li {
-                    font-family: "Roboto Slab", serif;
-                    margin-left: 30px;
-                    font-size: 20px;
-                }
-                .listen {
-                    cursor: pointer;
-                }
-            }
-            .afterunderlined {
-                padding-top: 50px;
-            }
-
-            @media (max-width: 600px) {
-                max-width: 90%;
-                padding-left: 0;
-                margin: 0 20px;
-                h2 {
-                    font-size: 25px;
-                    text-align: center;
-                }
-                h3 {
-                    font-size: 25px;
-                    text-align: center;
-                }
-                ul {
-                    padding-bottom: 15px;
-                    li {
-                        font-size: 17px;
-                    }
-                }
-            }
+        .listen {
+          cursor: pointer;
         }
-        .right-repertoire {
-            max-width: 50%;
-            min-width: 30%;
-            margin: 0 15%;
+        padding-bottom: 20px;
+      }
+      .underlined {
+        text-decoration: underline;
+        padding-bottom: 20px;
+      }
 
-            h2 {
-                font-family: "Roboto Slab", serif;
-                font-size: 30px;
-                padding-bottom: 20px;
-                font-weight: 700;
-            }
-            h3 {
-                font-family: "Roboto Slab", serif;
-                font-size: 30px;
-                font-weight: 100;
-            }
-            h4 {
-                font-family: "Roboto Slab", serif;
-                padding-bottom: 22px;
-            }
-            ul {
-                li {
-                    font-family: "Roboto Slab", serif;
-                    margin-left: 30px;
-                    font-size: 20px;
-                    line-height: 2;
-                }
-                .listen {
-                    cursor: pointer;
-                }
-                padding-bottom: 20px;
-            }
-            .underlined {
-                text-decoration: underline;
-                padding-bottom: 20px;
-            }
+      .afterunderlined {
+        padding-top: 50px;
+      }
 
-            .afterunderlined {
-                padding-top: 50px;
-            }
-
-            @media (max-width: 600px) {
-                max-width: 90%;
-                margin: 0 20px;
-                padding-top: 60px;
-                h2 {
-                    font-size: 25px;
-                    text-align: center;
-                }
-                h3 {
-                    font-size: 25px;
-                    text-align: center;
-                }
-                h4 {
-                    font-size: 15px;
-                    padding-bottom: 10px;
-                    padding-left: 20px;
-                    text-align: justify;
-                }
-                ul {
-                    padding-bottom: 15px;
-                    li {
-                        font-size: 17px;
-                    }
-                }
-            }
+      @media (max-width: 600px) {
+        max-width: 90%;
+        margin: 0 20px;
+        padding-top: 60px;
+        h2 {
+          font-size: 25px;
+          text-align: center;
         }
+        h3 {
+          font-size: 25px;
+          text-align: center;
+        }
+        h4 {
+          font-size: 15px;
+          padding-bottom: 10px;
+          padding-left: 20px;
+          text-align: justify;
+        }
+        ul {
+          padding-bottom: 15px;
+          li {
+            font-size: 17px;
+          }
+        }
+      }
     }
+  }
 }

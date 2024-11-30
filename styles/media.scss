@@ -1,102 +1,102 @@
 .media {
-    width: 100%;
-    min-height: calc(100vh - 120px);
+  width: 100%;
+  min-height: calc(100vh - 120px);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
+  h1 {
+    font-family: "Montserrat", sans-serif;
+  }
+  .concert-list {
+    padding: 10% 5% 0 5%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    flex-direction: row;
+    align-items: center;
 
     @media (max-width: 600px) {
+      padding-top: 15%;
+    }
+    .video-card {
+      margin: 50px 0;
+      padding: 0 0 10px 0;
+      border-radius: 12px;
+      border: solid 2px rgba(255, 255, 255, 0.356);
+      backdrop-filter: blur(20px);
+      height: 300px;
+      transition: all 1s ease;
+      overflow: hidden;
+
+      &:hover {
+        transform: translateY(-3px);
+        box-shadow: 5px 5px 15px -5px rgba(255, 255, 255, 0.5);
+      }
+
+      a {
+        display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 400px;
+          height: auto;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+        }
+
+        h3 {
+          font-family: "Montserrat", sans-serif;
+          width: 300px;
+          text-align: center;
+        }
+      }
     }
-    h1 {
-        font-family: "Roboto Slab", serif;
-    }
-    .concert-list {
-        padding: 10% 5% 0 5%;
+  }
+  .classes-list {
+    padding: 10% 5% 0 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .video-card {
+      margin: 50px 0;
+      padding: 0 0 10px 0;
+      border-radius: 12px;
+      border: solid 2px rgba(255, 255, 255, 0.356);
+      backdrop-filter: blur(20px);
+      height: 300px;
+      transition: all 1s ease;
+      overflow: hidden;
+
+      &:hover {
+        transform: translateY(-3px);
+        box-shadow: 5px 5px 15px -5px rgba(255, 255, 255, 0.5);
+      }
+
+      a {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
 
-        @media (max-width: 600px) {
-            padding-top: 15%;
+        img {
+          width: 400px;
+          height: auto;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
         }
-        .video-card {
-            margin: 50px 0;
-            padding: 0 0 10px 0;
-            border-radius: 12px;
-            border: solid 2px rgba(255, 255, 255, 0.356);
-            backdrop-filter: blur(20px);
-            height: 300px;
-            transition: all 1s ease;
-            overflow: hidden;
 
-            &:hover {
-                transform: translateY(-3px);
-                box-shadow: 5px 5px 15px -5px rgba(255, 255, 255, 0.5);
-            }
-
-            a {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                img {
-                    width: 400px;
-                    height: auto;
-                    border-top-left-radius: 10px;
-                    border-top-right-radius: 10px;
-                }
-
-                h3 {
-                    font-family: "Roboto Slab", serif;
-                    width: 300px;
-                    text-align: center;
-                }
-            }
+        h3 {
+          font-family: "Montserrat", sans-serif;
+          width: 300px;
+          text-align: center;
         }
+      }
     }
-    .classes-list {
-        padding: 10% 5% 0 5%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        .video-card {
-            margin: 50px 0;
-            padding: 0 0 10px 0;
-            border-radius: 12px;
-            border: solid 2px rgba(255, 255, 255, 0.356);
-            backdrop-filter: blur(20px);
-            height: 300px;
-            transition: all 1s ease;
-            overflow: hidden;
-
-            &:hover {
-                transform: translateY(-3px);
-                box-shadow: 5px 5px 15px -5px rgba(255, 255, 255, 0.5);
-            }
-
-            a {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-
-                img {
-                    width: 400px;
-                    height: auto;
-                    border-top-left-radius: 10px;
-                    border-top-right-radius: 10px;
-                }
-
-                h3 {
-                    font-family: "Roboto Slab", serif;
-                    width: 300px;
-                    text-align: center;
-                }
-            }
-        }
-    }
+  }
 }

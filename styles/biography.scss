@@ -1,57 +1,60 @@
 .biography {
-    width: 100%;
-    min-height: calc(100vh - 120px);
+  width: 100%;
+  min-height: calc(100vh - 120px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 100px;
+
+  .title {
+    margin-bottom: 1rem;
+
+    h1 {
+      font-family: "Montserrat", sans-serif;
+    }
+    h2 {
+      font-family: "Montserrat", sans-serif;
+    }
+
+    @media (max-width: 600px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  .bio-body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    padding-top: 100px;
+    flex-direction: row;
+    max-width: 85%;
+    margin-bottom: 1rem;
 
-    .tittle {
-        h1 {
-            font-family: "Roboto Slab", serif;
-        }
-        h2 {
-            font-family: "Roboto Slab", serif;
-        }
-
-        @media (max-width: 600px) {
-            margin-bottom: 30px;
-        }
+    @media (max-width: 600px) {
+      flex-direction: column;
+      max-width: 98%;
     }
 
-    .bio-body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-        max-width: 85%;
+    p {
+      font-family: "Montserrat", sans-serif;
+      max-width: 500px;
+      text-align: justify;
+      line-height: 1.6;
+      margin: 0 50px;
 
-        @media (max-width: 600px) {
-            flex-direction: column;
-            max-width: 98%;
-        }
+      i {
+        font-family: "Montserrat", sans-serif;
+      }
 
-        p {
-            font-family: "Roboto Slab", serif;
-            max-width: 500px;
-            text-align: justify;
-            line-height:1.6;
-            margin: 0 50px;
-
-            i {
-                font-family: "Roboto Slab", serif;
-            }
-
-            @media (max-width: 600px) {
-                margin-bottom: 30px;
-            }
-        }
-
-        .img-hidden-phone {
-            @media (max-width: 600px) {
-                display: none;
-            }
-        }
+      @media (max-width: 600px) {
+        margin-bottom: 30px;
+      }
     }
+
+    .img-hidden-phone {
+      @media (max-width: 600px) {
+        display: none;
+      }
+    }
+  }
 }

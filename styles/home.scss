@@ -1,51 +1,51 @@
 .home {
-    width: 100%;
-    height: calc(100vh - 120px);
+  width: 100%;
+  height: calc(100vh - 120px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .main {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    padding-top: 100px;
 
-    .main {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding-top:100px;
-
-        @media (max-width: 600px) {
-            flex-direction: column;
-            padding-top:0;
-        }
-
-        .img-float-left {
-            padding-right: 100px;
-            @media (max-width: 600px) {
-                padding: 30px 70px;
-            }
-        }
-
-        .text-float-right {
-            text-align: center;
-
-            h1 {
-                // font-family: 'Aref Ruqaa', serif;
-                font-family: 'Roboto Slab', serif;
-                font-size: 56px;
-                padding-bottom: 10px;
-                @media (max-width: 600px) {
-                    font-size: 20px;
-                }
-            }
-            h3 {
-                font-family: 'Roboto Slab', serif;
-                font-size: 25px;
-                font-weight: 400;
-                @media (max-width: 600px) {
-                    font-size: 18px;
-                }
-                i{
-                    font-family: 'Roboto Slab', serif;
-                }
-            }
-        }
+    @media (max-width: 600px) {
+      flex-direction: column;
+      padding-top: 0;
     }
+
+    .img-float-left {
+      padding-right: 100px;
+      @media (max-width: 600px) {
+        padding: 30px 70px;
+      }
+    }
+
+    .text-float-right {
+      text-align: center;
+
+      h1 {
+        // font-family: 'Aref Ruqaa', sans-serif;
+        font-family: "Montserrat", sans-serif;
+        font-size: 56px;
+        padding-bottom: 10px;
+        @media (max-width: 600px) {
+          font-size: 20px;
+        }
+      }
+      h3 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 25px;
+        font-weight: 400;
+        @media (max-width: 600px) {
+          font-size: 18px;
+        }
+        i {
+          font-family: "Montserrat", sans-serif;
+        }
+      }
+    }
+  }
 }

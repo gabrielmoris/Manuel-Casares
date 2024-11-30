@@ -5,7 +5,7 @@ import Image from "next/image";
 const Biography: NextPage = () => {
   return (
     <div className="biography">
-      <div className="tittle">
+      <div className="title">
         <h1>Manuel Casares Gestal</h1>
         <h2>A Coruña, Spain, 1994</h2>
       </div>
